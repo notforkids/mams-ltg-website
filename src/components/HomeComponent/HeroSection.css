@@ -1,0 +1,8 @@
+.bg-hero{
+    background-image: url(../../img/header-pic-background.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding-top: 15rem;
+    padding-bottom: 15rem
+}
