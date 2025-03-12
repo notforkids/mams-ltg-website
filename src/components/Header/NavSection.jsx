@@ -13,7 +13,7 @@ const NavSection = () => {
       <img
           src={Logo}
           width="auto"
-          height="60"
+          height="40"
           className="d-inline-block align-top"
           alt="LT&G Logo"
           />
