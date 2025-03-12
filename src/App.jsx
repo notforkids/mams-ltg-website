@@ -2,7 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import {
-  createBrowserRouter,
+  createHashRouter,
   Outlet,
   RouterProvider,
 } from "react-router-dom";
@@ -20,7 +20,7 @@ const Dashboard = () =>{
   );
 };
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Dashboard />,
