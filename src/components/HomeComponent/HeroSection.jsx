@@ -8,10 +8,10 @@ import './HeroSection.css'
 
 const HeroSection = () => {
   return (
-    <Container fluid className='bg-hero px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-4'>
-            <Row>
-                <Col xs={12} md={10} lg={9} xl={8} xxl={6}>
-                    <h1 className='text-light display-1 fw-medium'>Franchise the Future of Microlending</h1>  
+    <Container fluid className='bg-hero custom-x-padding vh-100 d-flex'>
+            <Row className="w-100 d-flex align-items-center">
+                <Col xs={12} md={10} lg={9} xl={8} xxl={6} className='my-auto'>
+                    <h1 className='text-light display-4 fw-bold'>Franchise the Future of Microlending</h1>  
                     <p className='text-light lead mt-3'>LT&G Credit Line — The first microlending franchise in the Philippines, providing accessible loans to empower your future. Join us in transforming lives and building a brighter financial future together.</p>
                     <div className='mt-4'>
                     <Button variant='danger' className='me-2'>Learn More</Button>

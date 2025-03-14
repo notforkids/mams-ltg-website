@@ -10,15 +10,15 @@ import LinearOperations from '../../img/linearoperations.png';
 
 const FeatureListSection = () => {
   return (
-    <Container fluid className='py-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0'>
+    <Container fluid className='custom-x-padding py-5'>
         <Row className='mt-5 justify-content-center'>
             <Col className='mb-5' xxl={10}>
-              <h1 className="text-center display-2 fw-medium">Start Your Journey to Financial Freedom With Our Microlending Franchise</h1>
+              <h1 className="text-center display-4 fw-bold">Start Your Journey to Financial Freedom With Our Microlending Franchise</h1>
             </Col>
         </Row>
       
         <Row className='mt-5'>
-                <Col xxl={4} >
+                <Col xxl={4} lg={4} >
                     <Card className='text-center align-items-center border-0'>
                         <Card.Img src={GreatReturns} className="feature-list-pic" alt="Great Return Icon" variant="top" />
                         <Card.Body>
@@ -31,9 +31,9 @@ const FeatureListSection = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xxl={4}>
+                <Col xxl={4} lg={4}>
                     <Card className='text-center align-items-center border-0'>
-                        <Card.Img src={TimelessIndustry} className="feature-list-pic" alt="Great Return Icon" variant="top" />
+                        <Card.Img src={TimelessIndustry} className="feature-list-pic" alt="Timeless Industry Icon" variant="top" />
                         <Card.Body>
                             <Card.Title>
                                 <h3>Invest in a Timeless Industry with Lasting Impact</h3>
@@ -44,9 +44,9 @@ const FeatureListSection = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xxl={4}>
+                <Col xxl={4} lg={4}>
                     <Card className='text-center align-items-center border-0'>
-                        <Card.Img src={LinearOperations} className="feature-list-pic" alt="Great Return Icon" variant="top" />
+                        <Card.Img src={LinearOperations} className="feature-list-pic" alt="Linear Operations Icon" variant="top" />
                         <Card.Body>
                             <Card.Title>
                                <h3>Streamlined and Efficient Operations for Sustainable Growth</h3>
