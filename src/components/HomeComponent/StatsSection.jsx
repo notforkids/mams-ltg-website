@@ -9,12 +9,12 @@ import StatsPic from '../../img/stats-pic.png';
 const StatsSection = () => {
   return (
     <Container fluid className='bg-light custom-x-padding py-5'>
-    <Row className='d-flex flex-column-reverse flex-md-row align-items-center '>
+    <Row className='d-flex flex-column-reverse flex-md-row align-items-center py-5'>
         <Col md={6} sm={12} className='mt-5 d-flex justify-content-center align-items-center'>
         <img src={StatsPic} className='img-fluid rounded-5' alt='stats pic' />
         </Col>
         
-        <Col md={6} sm={12} className='mt-md-5 mt-sm-5 '>
+        <Col md={6} sm={12} className='mt-md-5 mt-sm-5 ps-md-5 '>
         <h6 className='fw-bold'>Success</h6>
         <h1 className="display-4 fw-bold mt-3">Transforming Lives Through Microfinance Solutions</h1>
         <p className='lead mt-3'>LT&G Credit Line has empowered thousands of entrepreneurs across the Philippines. Our innovative microlending approach has made financial access a reality for many. </p>
