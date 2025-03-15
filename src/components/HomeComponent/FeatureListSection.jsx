@@ -10,10 +10,10 @@ import LinearOperations from '../../img/linearoperations.png';
 
 const FeatureListSection = () => {
   return (
-    <Container fluid className='custom-x-padding py-5'>
+    <Container fluid className='bg-white custom-x-padding py-5'>
         <Row className='mt-5 justify-content-center'>
             <Col className='mb-5' xxl={10}>
-              <h1 className="text-center display-4 fw-bold">Start Your Journey to Financial Freedom With Our Microlending Franchise</h1>
+              <h1 className="text-center display-4 fw-bold">Why Choose Our Microlending Franchise?</h1>
             </Col>
         </Row>
       

@@ -35,8 +35,8 @@ const responsive = {
 
 const NewsAndEventSection = () => {
   return (
-    <Container fluid className='news-container margin-x-padding py-5'>
-        <Row className='justify-content-center'>
+    <Container fluid className='bg-white margin-x-padding py-5'>
+        <Row className='justify-content-center mb-5'>
             <Col xxl={10}>
                 <h1 className='display-4 fw-bold mt-5 text-center'>What's New?</h1>
                 <p className='lead mt-3 text-center'>Exciting Updates from Our Microlending Franchise</p>
@@ -61,7 +61,7 @@ const NewsAndEventSection = () => {
             <Card.Body>
               <Card.Text className='card-text mb-2'>{newsdata.date}</Card.Text>
               <Card.Title className='news-data-title'>{newsdata.title}</Card.Title>
-              <Button className='see-more-bt'> Read More</Button>
+              <Button variant='danger'> Read More</Button>
             </Card.Body>
           </Card>
         ))}
