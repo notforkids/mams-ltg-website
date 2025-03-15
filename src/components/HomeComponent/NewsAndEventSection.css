@@ -1,0 +1,46 @@
+.news-data-title{
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;     
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 300px;
+
+}
+.news-title{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+
+.news-container{
+    background-color: #f6f6f6;
+    
+}
+
+.card-img-size{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.see-more-bt{
+    background-color: #c10000;
+    border: none;
+}
+
+.custom-card{
+    border-radius: 10px;
+    position: relative;
+    /* overflow: hidden; */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);;
+    padding: 15px;
+    /* height: 450px; */
+}
+.react-multi-carousel-list {
+    padding: 0rem 0 2rem 0;
+    }
+    
+
