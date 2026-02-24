@@ -19,7 +19,7 @@ const LogoClouds = () => {
     <Container fluid className='bg-info py-5 '>
       <Row className='text-center justify-content-center'>
           <Col xxl={6}>
-            <motion.h1 className='text-light mt-5 display-5' variants={fadeIn} initial="hidden" whileInView="show">Franchisees Across the Nation</motion.h1>
+            <motion.div className='h1 text-light mt-5 display-5' variants={fadeIn} initial="hidden" whileInView="show" viewport={{ once: true }}>Franchisees Across the Nation</motion.div>
           </Col>
       </Row>
       <Row className='wrapper mb-5'>

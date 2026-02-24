@@ -1,0 +1,198 @@
+:root{
+  --ad-bg: transparent;
+  --ad-text: #ffffff;
+  --ad-muted: rgba(203, 213, 245, 0.75);
+
+  --ad-badge-bg: rgba(255, 204, 0, .18);
+  --ad-badge-text: #ffcc00;
+
+  --ad-accent: #d62828;
+  --ad-accent-hover: #b71c1c;
+
+  --ad-right-grad: linear-gradient(180deg, #0b2a6f, #071b4d);
+}
+
+
+.adModalDialog .modal-content{
+  background: var(--ad-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+  animation: adModalIn 420ms cubic-bezier(.2,.9,.2,1);
+}
+
+.modal-backdrop.show {
+  background-color: rgba(4, 13, 31, 0.85);
+}
+
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition:
+    opacity 700ms ease-in-out,
+    transform 700ms cubic-bezier(.22, .61, .36, 1);
+  transform: scale(1.02);
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel {
+  cursor: grab;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.carousel-item {
+  transition-timing-function: cubic-bezier(.22, .61, .36, 1);
+  position: relative;
+}
+
+
+.adImage{
+  min-height: 320px;
+  object-fit: cover;
+  transform: scale(1.08);
+  transition: transform 4200ms ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-item.active .adImage{
+  transform: scale(1);
+}
+
+
+.adRight{
+  background: var(--ad-right-grad);
+  color: var(--ad-text);
+  transform: translateY(8px);
+  opacity: 0.96;
+  transition: transform 700ms ease, opacity 700ms ease;
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-item.active .adRight{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.adBadge{
+  background: var(--ad-badge-bg);
+  color: var(--ad-badge-text);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.adSubtitle{
+  color: var(--ad-muted);
+  font-size: 14px;
+  max-width: 380px;
+  margin-inline: auto;
+}
+
+
+.adCtaBtn{
+  font-weight: 700;
+  padding: 12px 28px;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.adCtaBtn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(214,40,40,.35);
+}
+
+.ctaArrow{
+  margin-left: 8px;
+  transition: transform 200ms ease;
+}
+
+.adCtaBtn:hover .ctaArrow{
+  transform: translateX(3px);
+}
+
+
+.adSlideContent{
+  opacity: 0;
+  transform: translateY(14px) scale(0.98);
+  transition:
+    opacity 500ms ease,
+    transform 700ms cubic-bezier(.22, .61, .36, 1);
+}
+
+.adSlideContent.is-active{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+
+.carousel,
+.carousel-item,
+.carousel-inner {
+  background: transparent !important;
+}
+
+.adDontShow {
+  position: absolute;
+  display: none;
+  height: 0;
+  top: 20px;
+  right: 900px;       
+  z-index: 9999;     
+  pointer-events: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+
+.carousel-item::before {
+  pointer-events: none !important;
+}
+
+
+.adDontShow * {
+  pointer-events: auto !important;
+}
+
+
+.adDontShow .form-check-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+}
+
+
+@media (max-width: 767px){
+  .adImage{
+    min-height: 220px;
+  }
+
+  .adDontShow {
+    display: block;
+    bottom: 10px;
+    right: 12px;
+  }
+  .adDontShow:active {
+    transform: scale(0.92);
+    background-color: #333333 !important;
+    opacity: 1 !important;
+  }
+}
+
+@keyframes adModalIn{
+  from{
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
