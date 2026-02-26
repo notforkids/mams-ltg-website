@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './CEOSection.css'
-import CEOPic from '../../img/ceo-pic.webp';
+import CEOPic from '../../img/ceo-pic3.webp';
 import { childVariant, fadeIn, ceoVariant } from '../../data/animation';
 import { motion } from 'framer-motion';
 

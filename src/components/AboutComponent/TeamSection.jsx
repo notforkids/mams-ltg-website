@@ -11,9 +11,9 @@ import MarlonPic from '../../img/team-marlon1.webp';
 import ArnoldPic from '../../img/team-arnold1.webp';
 import EmsPic from '../../img/team-ems1.webp';
 import AlexPic from '../../img/team-alex1.webp';
-import ShainlyPic from '../../img/team-blank1.webp';
+import ShainlyPic from '../../img/team-shainly1.webp';
 import FretzPic from '../../img/team-fretz1.webp';
-import MarkPic from '../../img/team-blank1.webp';
+import MarkPic from '../../img/team-sanglap1.webp';
 import { childVariant, fadeIn } from '../../data/animation';
 import { motion } from 'framer-motion';
 

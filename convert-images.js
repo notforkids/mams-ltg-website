@@ -6,7 +6,7 @@ import path from 'path';
 // Adjust the quality setting as needed for a balance between image quality and file size.
 
 
-const directory = './src/img/news-pic'; // Your image folder
+const directory = './src/img/'; // Your image folder
 
 fs.readdirSync(directory).forEach(file => {
     if (file.endsWith('.jpg') || file.endsWith('.jpeg') || file.endsWith('.png')) {
